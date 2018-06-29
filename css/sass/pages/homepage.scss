@@ -1,0 +1,26 @@
+.hp-section {
+    .hp-canvas {
+        position: relative;
+        min-height: 500px;
+        height: 100vh;
+        display: -ms-flexbox;
+        display: flex;
+        .swiper-slide {
+            > img {
+                @include cover-media;
+            }
+            &:after {
+                content: "";
+                @include cover-el;
+                background-image:url('../img/waves2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: .2;
+                
+            }
+        }
+        @include media-breakpoint-up(xs) {
+            min-height: 600px;
+        }
+    }
+}

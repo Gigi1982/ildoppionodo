@@ -1,0 +1,12 @@
+.header {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    @include media-breakpoint-up(md) {
+        left: 60px;
+        right: 60px;
+        top: 60px;
+    }
+}
